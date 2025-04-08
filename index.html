@@ -250,6 +250,109 @@
                     <div class="columns is-centered is-gapless">
                         <div class="column is-full-width">
 
+
+                    <h2 class="title is-3">Motion sequences from Mixamo</h2>
+                    <P>We present results on motions sampled from Mixamo, extract 3D keypoints and transfer it
+                        to diverse unseen shapes. We interpolate the keypoint locations from Mixamo to roughly
+                        align with AMASS keypoint locations. Although it's a noisy approximation, SMF's Kinetic
+                        Codes enable smooth transfer, further proving the versatality of our approach as
+                        aligning keypoints using interpolation is simple and can be automated. </P>
+                    <br>
+                    <p><b>All Mixamo motions are completely unseen (ours and all baselines except Skeleton-free are only trained on AMASS). Note, Skeleton-free requires the complete mesh as input and it is additionally trained on Mixamo data.</b></p>
+
+                    <br><p>Other methods do not transfer the motion faithfully and in the case of Skeleton-free, it results in multiple artifacts.</p>
+
+                    <br><br>
+
+                    <div class="my-switcher">
+                        <!-- Tabs (Running / Chicken Wings) -->
+                        <div class="tabs is-boxed is-centered">
+                            <ul>
+                                <!-- The first tab is active by default -->
+                                <li class="is-active" data-tab="hiphop">
+                                    <a>Hip-hop</a>
+                                </li>
+                                <li data-tab="surprised">
+                                    <a>Surprised</a>
+                                </li>
+                                <li data-tab="argue">
+                                    <a>Argue</a>
+                                </li>
+                                <li data-tab="shuffling">
+                                    <a>Shuffling</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Running (in-place) Content -->
+                        <div class="tab-content is-active" data-content="hiphop">
+                            <div class="columns is-full-width is-gapless">
+                                <div class="column is-centered">
+                                    <!-- <p>
+                                                <center>GT</center>
+                                            </p> -->
+                                    <video autoplay controls muted loop disablepictureinpicture
+                                        controlslist="nodownload" playsinline>
+                                        <source src="./static/videos/mixamo_hiphop.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-content" data-content="surprised">
+                            <div class="columns is-full-width is-gapless">
+                                <div class="column is-centered">
+                                    <!-- <p>
+                                                <center>GT</center>
+                                            </p> -->
+                                    <video autoplay controls muted loop disablepictureinpicture
+                                        controlslist="nodownload" playsinline>
+                                        <source src="./static/videos/mixamo_surprised.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-content" data-content="argue">
+                            <div class="columns is-full-width is-gapless">
+                                <div class="column is-centered">
+                                    <!-- <p>
+                                                <center>GT</center>
+                                            </p> -->
+                                    <video autoplay controls muted loop disablepictureinpicture
+                                        controlslist="nodownload" playsinline>
+                                        <source src="./static/videos/mixamo_argue.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-content" data-content="shuffling">
+                            <div class="columns is-full-width is-gapless">
+                                <div class="column is-centered">
+                                    <!-- <p>
+                                                <center>GT</center>
+                                            </p> -->
+                                    <video autoplay controls muted loop disablepictureinpicture
+                                        controlslist="nodownload" playsinline>
+                                        <source src="./static/videos/mixamo_shuffling.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <br><br><br>
+
                             <h2 class="title is-3">Motion sequences from AMASS</h2>
                             <p>We compare our method on a wide variety of unseen motion transfer from AMASS to varied
                                 meshes with significantly different shape and topology. All results show transferred
@@ -536,106 +639,7 @@
 
                     </div>
 
-                    <br><br><br><br>
 
-
-                    <h2 class="title is-3">Motion sequences from Mixamo</h2>
-                    <P>We present results on motions sampled from Mixamo, extract 3D keypoints and transfer it
-                        to diverse unseen shapes. We interpolate the keypoint locations from Mixamo to roughly
-                        align with AMASS keypoint locations. Although it's a noisy approximation, SMF's Kinetic
-                        Codes enable smooth transfer, further proving the versatality of our approach as
-                        aligning keypoints using interpolation is simple and can be automated. </P>
-                    <br>
-                    <p><b>All Mixamo motions are completely unseen.</b></p>
-
-                    <br><br>
-
-                    <div class="my-switcher">
-                        <!-- Tabs (Running / Chicken Wings) -->
-                        <div class="tabs is-boxed is-centered">
-                            <ul>
-                                <!-- The first tab is active by default -->
-                                <li class="is-active" data-tab="hiphop">
-                                    <a>Hip-hop</a>
-                                </li>
-                                <li data-tab="surprised">
-                                    <a>Surprised</a>
-                                </li>
-                                <li data-tab="argue">
-                                    <a>Argue</a>
-                                </li>
-                                <li data-tab="shuffling">
-                                    <a>Shuffling</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Running (in-place) Content -->
-                        <div class="tab-content is-active" data-content="hiphop">
-                            <div class="columns is-full-width is-gapless">
-                                <div class="column is-centered">
-                                    <!-- <p>
-                                                <center>GT</center>
-                                            </p> -->
-                                    <video autoplay controls muted loop disablepictureinpicture
-                                        controlslist="nodownload" playsinline>
-                                        <source src="./static/videos/mixamo_hiphop.mp4" type="video/mp4" />
-                                    </video>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="tab-content" data-content="surprised">
-                            <div class="columns is-full-width is-gapless">
-                                <div class="column is-centered">
-                                    <!-- <p>
-                                                <center>GT</center>
-                                            </p> -->
-                                    <video autoplay controls muted loop disablepictureinpicture
-                                        controlslist="nodownload" playsinline>
-                                        <source src="./static/videos/mixamo_surprised.mp4" type="video/mp4" />
-                                    </video>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="tab-content" data-content="argue">
-                            <div class="columns is-full-width is-gapless">
-                                <div class="column is-centered">
-                                    <!-- <p>
-                                                <center>GT</center>
-                                            </p> -->
-                                    <video autoplay controls muted loop disablepictureinpicture
-                                        controlslist="nodownload" playsinline>
-                                        <source src="./static/videos/mixamo_argue.mp4" type="video/mp4" />
-                                    </video>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="tab-content" data-content="shuffling">
-                            <div class="columns is-full-width is-gapless">
-                                <div class="column is-centered">
-                                    <!-- <p>
-                                                <center>GT</center>
-                                            </p> -->
-                                    <video autoplay controls muted loop disablepictureinpicture
-                                        controlslist="nodownload" playsinline>
-                                        <source src="./static/videos/mixamo_shuffling.mp4" type="video/mp4" />
-                                    </video>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
 
 
                     <br><br>
